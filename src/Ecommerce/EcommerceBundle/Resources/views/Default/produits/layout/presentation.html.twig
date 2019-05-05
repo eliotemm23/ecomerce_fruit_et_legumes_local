@@ -1,0 +1,56 @@
+{% extends "::layout/layout.html.twig" %}
+
+{% block title %}{{ produit.nom }}{% endblock %}
+{% block description %}{{ produit.description }}{% endblock %} 
+
+{% block body %}
+     <br/> <br/>
+    <div class="container">
+        <div class="row">
+            <div class="span3">
+                {% include '::modulesUsed/navigation.html.twig' %}
+                {{ render(controller('EcommerceEcommerceBundle:Panier:menu')) }}
+            </div>
+
+            <div class="span9">
+                <div class="row">
+                    <div class="span5">
+                         <img src="{{ asset(produit.image.AssetPath) }}" alt="{{ produit.image.name }}" width="400" height="310">
+                    </div>
+
+                    <div class="span4">
+                        <h4>{{ produit.nom }}</h4> 
+                        <h5>{{ produit.categorie.nom }}</h5>
+                        <p>{{ produit.description }}</p>
+                         {% if panier[produit.id] is not defined %}
+                                <form action="{{ path('ajouter', { 'id' : produit.id }) }}" method="get">
+                                        <select name="qte" class="span1">
+                                         {% for i in 1..20 %}
+                                             <option value="{{ i }}">{{ i }}</option>
+                                         {% endfor %}
+                                        </select>
+
+                                        <div>
+                                            <button class="btn btn-primary">Ajouter au panier</button>
+                                        </div>                                        
+                                </form>
+                                 <div><a href="{{ path('origineproduit', { 'id' : produit.id }) }}" target="_blank" ><h4><i class="icon-globe icon-white"></i>Connaitre la provenance</h4></a>
+                                </div>
+                                        
+                          {% else %}
+                                <div>
+                                    <a href="{{ path('panier') }}" class="btn btn-primary">Le produit est déjà dans votre panier</a>
+                                </div>
+                                <br/>
+                                 <br/>
+                                <div><a href="{{ path('origineproduit', { 'id' : produit.id }) }}" target="_blank" ><i class="icon-globe icon-white"></i>Connaitre la provenance</a>
+                          {% endif %}
+                    </div>
+                </div>
+
+            </div>    
+        </div>
+                      <div><a href="{{ path('produits')}}" class="btn btn-primary pull-right">Retour </a> </div>
+       </div>
+    </div>                   
+{% endblock %}

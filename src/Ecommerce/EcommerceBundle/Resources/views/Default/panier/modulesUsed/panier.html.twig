@@ -1,0 +1,16 @@
+<div class="well">
+    <ul class="nav nav-list">
+        <li class="nav-header"><h4>Panier</h4></li>
+        <li>
+            <a href="{{ path('panier') }}">
+                {% if articles == 0 %}
+                <strong> Aucun article dans votre panier</strong><img src="{{ asset('img/poussete.png') }}" alt="lf4ds"/> 
+                {% elseif articles == 1 %}
+                 <strong> 1 article dans votre panier</strong><img src="{{ asset('img/poussete.png') }}" alt="lf4ds"/>
+                {% else %}
+                 {{ articles }} <strong>articles dans votre panier</strong><img src="{{ asset('img/poussete.png') }}" alt="lf4ds"/>
+                {% endif %}
+            </a>
+        </li>
+    </ul>
+</div>

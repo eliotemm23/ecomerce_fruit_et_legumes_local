@@ -1,0 +1,12 @@
+
+
+utilisateurs_utilisateurs_homepage:
+    path:     /kk
+    defaults: { _controller: UtilisateursUtilisateursBundle:Default:index }
+factures:
+    path: /profile/factures
+    defaults: { _controller: UtilisateursUtilisateursBundle:Utilisateurs:factures }
+
+facturesPDF:
+    path: /profile/factures/pdf/{id}
+    defaults: { _controller: UtilisateursUtilisateursBundle:Utilisateurs:facturesPDF }

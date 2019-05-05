@@ -1,0 +1,5 @@
+
+payement:
+    path:  /payement/{id}
+    defaults: { _controller: EcommerceEcommerceBundle:Commandes:validationCommande }
+      

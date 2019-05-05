@@ -1,0 +1,20 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 127.0.0.1
+    database_port: 3306
+    database_name: ecommerce
+    database_user: phpmyadmin
+    database_password: wolverine
+    mailer_transport: smtp
+    mailer_encryption: ssl
+    mailer_host: smtp.gmail.com
+    mailer_user: maximelunatique@gmail.com
+    mailer_password: wolverine5
+    
+    secret: 02800d2f08e058b2fb4029cb5d340483eeddbf7d
+twig:
+    globals:
+        telephone: '07 80 81 81 62'
+        fax: '02 35 00 00 00'
+        adresse: '159 Boulevard de la Liberté 59000 Lille'
+        email: 'contact@lafraicheurdes4saisons.fr'

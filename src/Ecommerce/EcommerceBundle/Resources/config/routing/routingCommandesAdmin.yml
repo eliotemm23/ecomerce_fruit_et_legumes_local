@@ -1,0 +1,7 @@
+adminCommande:
+    path:  /
+    defaults: { _controller: EcommerceEcommerceBundle:CommandesAdmin:commandes }
+    
+adminShowFacture:
+    path:  /facture/{id}
+    defaults: { _controller: EcommerceEcommerceBundle:CommandesAdmin:showFacture }

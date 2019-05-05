@@ -1,0 +1,93 @@
+{% extends "::layout/layout.html.twig" %}
+    
+
+{% block head %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    
+    <!-- Material Design Bootstrap -->
+  
+
+ {% endblock %}  
+    
+    {% block body %}
+            
+    <div class="container">
+        
+        <div class="row">
+           <br/>  
+           <br/> 
+           <div class="span3">
+               
+                 
+                                                  
+                 {% include '::modulesUsed/navigation.html.twig' %} 
+                 {% if is_granted('IS_AUTHENTICATED_FULLY') %} 
+                     
+                 {% include 'UtilisateursUtilisateursBundle:Default:modulesUsed/utilisateursConnecte.html.twig' %} 
+                 {% else %}
+                    {% include 'UtilisateursUtilisateursBundle:Default:modulesUsed/utilisateurs.html.twig' %} 
+                 {% endif %}
+                 
+                 {{ render(controller('EcommerceEcommerceBundle:Panier:menu')) }}
+                 
+            </div>
+             
+            <div class="span9">
+                
+              
+              {% if produits|length != 0 %}
+                    <ul class="thumbnails">
+                        {% for produit in produits %}
+                            <li class="span3">
+                                <div class="thumbnail">
+                                   
+                                    
+                                      <img src="{{ asset(produit.image.AssetPath) }}" alt="{{ produit.image.name }}" width="200" height="150">
+                                     <div class="caption">
+                                        <h4>{{ produit.nom }}</h4>
+                                        <p>{{ produit.prix|tva(produit.tva.multiplicate)}} € &nbsp;&nbsp;TTC</p>
+                                        <a class="btn btn-primary " href="{{ path('presentation', { 'id' : produit.id }) }}">Plus d'infos</a>
+                                         {% if panier[produit.id] is not defined %}
+                                        
+                                             <a class="btn btn-success " href="{{ path('ajouter',{ 'id' : produit.id }) }}">Ajouter au panier</a>
+                                          {% endif %}
+                                    </div>
+                                </div>
+                            </li>
+                        {% endfor %}       
+                    </ul>
+                              
+                <div class="navigation">
+                    {{ knp_pagination_render(produits) }}
+                </div>
+                          
+              {% else %}
+                      <div class="alert alert-error">
+                           Aucun produit trouvé
+                     </div>
+                 
+          {% endif %}
+
+          {% include '::modulesUsed/maps.html.twig' %} 
+          
+          
+            </div>
+        </div>
+    </div>
+     </div>
+ </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        
+        <!-- SCRIPTS -->
+        <!-- JQuery -->        
+        
+        
+          
+{% endblock %}

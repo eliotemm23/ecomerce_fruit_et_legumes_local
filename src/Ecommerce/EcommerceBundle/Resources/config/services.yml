@@ -1,0 +1,11 @@
+services:
+#    ecommerce_ecommerce.example:
+#        class: Ecommerce\EcommerceBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+#
+#setNewReference:
+#      class: Ecommerce\EcommerceBundle\Services\GetReference
+#      arguments: 
+#          - '@security.context'
+#          - '@doctrine.orm.entity_manager'
+          

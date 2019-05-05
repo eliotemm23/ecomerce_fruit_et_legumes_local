@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/src/Ecommerce/EcommerceBundle/Entity/Produits.php</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/src/Ecommerce/EcommerceBundle/Repository/MediaRepository.php</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/src/Ecommerce/EcommerceBundle/Resources/config/routing/routingCommandes.yml</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/src/Ecommerce/EcommerceBundle/Entity/Media.php</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/src/Ecommerce/EcommerceBundle/Resources/views/Default/produits/layout/presentation.html.twig</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/app/Resources/views/layout/layout.html.twig</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/src/Ecommerce/EcommerceBundle/Repository/CategoriesRepository.php</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/src/Ecommerce/EcommerceBundle/Entity/Categories.php</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/src/Ecommerce/EcommerceBundle/DependencyInjection/EcommerceEcommerceExtension.php</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/src/Ecommerce/EcommerceBundle/Resources/config/routing.yml</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/src/Ecommerce/EcommerceBundle/Resources/config/routing/routingPanier.yml</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/src/Ecommerce/EcommerceBundle/Repository/CommandesRepository.php</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/src/Ecommerce/EcommerceBundle/Resources/config/services.yml</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/app/Resources/views/layout/layoutAdmin.html.twig</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/app/Resources/views/default/index.html.twig</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/src/Ecommerce/EcommerceBundle/Form/ProduitsType.php</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/src/Ecommerce/EcommerceBundle/Controller/ProduitsController.php</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/app/config/config.yml</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/app/config/services.yml</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/src/Ecommerce/EcommerceBundle/Resources/views/Default/produits/layout/origineproduit.html.twig</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/src/Ecommerce/EcommerceBundle/DependencyInjection/EcommerceExtension.php</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/src/Ecommerce/EcommerceBundle/Resources/config/routing/routingCategoriesAdmin.yml</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/src/Ecommerce/EcommerceBundle/Controller/CommandesController.php</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/src/Ecommerce/EcommerceBundle/DependencyInjection/Configuration.php</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/src/Ecommerce/EcommerceBundle/Resources/config/routing/routingProduits.yml</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/app/config/parameters.yml</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/src/Ecommerce/EcommerceBundle/Resources/views/Default/produits/layout/produits.html.twig</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/app/Resources/views/modulesUsed/maps.html.twig</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/src/Ecommerce/EcommerceBundle/Resources/config/routing/routingAdmin.yml</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/composer.json</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/src/Ecommerce/EcommerceBundle/Form/CategoriesType.php</file>
+            <file>file:/home/maxime/NetBeansProjects/ecommerce/src/Ecommerce/EcommerceBundle/Repository/ProduitsRepository.php</file>
+        </group>
+    </open-files>
+</project-private>

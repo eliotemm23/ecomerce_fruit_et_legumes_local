@@ -1,0 +1,13 @@
+
+{% for categorie in categories %}
+    {% if categorie =="Légumes"  %}
+    <li>   <a class="brand" href="{{ path('categorieProduits', { 'categorie' : categorie.id }) }}"><img src="{{ asset('img/chouxbl.png') }}" alt="lf4ds"/><strong><em>{{ categorie.nom }}</em></strong></a></li>
+    
+    {% else %}
+    <li>   <a class="brand" href="{{ path('categorieProduits', { 'categorie' : categorie.id }) }}"><img src="{{ asset('img/orangepluche.png') }}" alt="lf4ds"/><strong><em>{{ categorie.nom }}</em></strong></a></li> 
+        
+    {% endif %}
+    
+{% endfor %}
+
+

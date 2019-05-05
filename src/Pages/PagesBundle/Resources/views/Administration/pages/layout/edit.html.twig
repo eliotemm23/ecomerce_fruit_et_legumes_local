@@ -1,0 +1,25 @@
+{% extends '::layout/layoutAdmin.html.twig' %}
+
+{% block body %}
+    <h2>Page edit</h2>
+<div class="span9">
+     {{ form_start(edit_form) }}
+       {{ form_widget(edit_form) }} 
+        <input type="submit" value="Edit" class="pull-left"/>
+      {{ form_end(edit_form) }}
+    
+    
+    {{ form_start(delete_form) }}
+   
+       <input type="submit" value="Delete" class="pull-right" />
+   {{ form_end(delete_form) }}
+    
+    <br/><br/>
+    <a href="{{ path('adminPages_index') }}" class="btn btn-primary">Back to the list</a>
+    
+    </div>
+      
+{% endblock %}
+
+                     
+              

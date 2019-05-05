@@ -1,0 +1,23 @@
+produits:
+    path:     /produit
+    defaults: { _controller: EcommerceEcommerceBundle:Produits:produits}
+    
+layoutAcceuil:
+    path:     /
+    defaults: { _controller: EcommerceEcommerceBundle:Produits:acceuil}    
+
+presentation:
+    path:     /produit/{id}
+    defaults: { _controller: EcommerceEcommerceBundle:Produits:presentation}
+
+origineproduit:
+    path:     /origineproduit/{id}
+    defaults: { _controller: EcommerceEcommerceBundle:Produits:origineproduit} 
+    
+categorieProduits:
+    path:     /categorie/{categorie}
+    defaults: { _controller: EcommerceEcommerceBundle:Produits:produits }
+    
+rechercheProduits:
+    path:     /recherche
+    defaults: { _controller: EcommerceEcommerceBundle:Produits:rechercheTraitement}
